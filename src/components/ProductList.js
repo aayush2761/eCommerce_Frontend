@@ -33,7 +33,7 @@ const ProductList = () => {
     console.warn(event.target.value)
     let key=event.target.value;
     if(key){
-        let result= await fetch(`http://localhost:5000/search/${key}`);
+        let result= await fetch(`https://ecommerce-backend-402f.onrender.com/search/${key}`);
            
         
         result=await result.json();
