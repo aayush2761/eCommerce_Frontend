@@ -17,7 +17,7 @@ const Login=()=>{
 
     const handlelogin=async()=>{
         console.warn(email,password);
-        let result =await fetch('https://ecommerce-ayu1.onrender.comlogin' , {
+        let result =await fetch('https://ecommerce-ayu1.onrender.com/login' , {
             method:'post',
             body:JSON.stringify({email,password}),
             headers: {
