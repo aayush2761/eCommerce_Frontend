@@ -1,0 +1,267 @@
+/* ===========================
+   🌟 Global Styles
+   =========================== */
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  body {
+    background: #f4f4f9; 
+    color: #333;  
+    line-height: 1.6;
+  }
+  
+  /* ===========================
+     🌟 Navigation Bar with Gradient & Logo in Line
+     =========================== */
+  .nav-ul {
+    background: linear-gradient(135deg, #64B5F6, #81C784);  /* Gradient */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-ul li {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .nav-ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-ul li a:hover {
+    color: #FFEB3B;  /* Yellow hover effect */
+  }
+  
+  /* ===========================
+     🌟 Logo Styling (Aligned with Navbar)
+     =========================== */
+  .logo {
+    background: linear-gradient(135deg, #64B5F6, #81C784);  /* Gradient */
+    height: 50px;
+    border-radius: 50%;
+    
+   
+    transition: transform 0.3s;
+    margin-top: 13px;
+    width: 57px;
+  float: left;
+  border-radius: 50%;
+  margin-left: 20px;
+  }
+  .logo-wrapper{
+    background: linear-gradient(135deg, #64B5F6, #81C784); 
+  }
+
+  
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Flex container to keep logo and links in line */
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* ===========================
+     🌟 Form Elements
+     =========================== */
+  .inputbox {
+    display: block;
+    margin: 25px auto;
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #64B5F6; 
+    border-radius: 8px;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  .inputbox:focus {
+    border-color: #1976D2;  
+    box-shadow: 0 0 8px rgba(25, 118, 210, 0.5);
+    outline: none;
+  }
+  
+  /* ===========================
+     🌟 Buttons
+     =========================== */
+  .appbutton {
+    display: block;
+    margin: 25px auto;
+    padding: 10px;
+    width: 150px;
+    color: white;
+    background: #64B5F6;  /* Blue button */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .appbutton:hover {
+    background: #81C784; /* Green hover */
+  }
+  
+  /* ===========================
+     🌟 Footer
+     =========================== */
+  .footer {
+    background: linear-gradient(135deg, #64B5F6, #81C784);  
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* ===========================
+     🌟 Product List
+     =========================== */
+  .product-list {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .product-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .product-list ul li {
+    display: inline-block;
+    border: 1px solid #64B5F6;  
+    padding: 10px;
+    width: 150px;
+    background: #ffffff;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-list ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* ===========================
+     🌟 Search Box
+     =========================== */
+  .search-product-box {
+    width: 400px;
+    margin: 20px auto;
+    height: 40px;
+    border: 2px solid #64B5F6;  
+    border-radius: 30px;
+    padding: 10px;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  .search-product-box:focus {
+    border-color: #81C784;
+    box-shadow: 0 0 10px rgba(129, 199, 132, 0.5);
+    outline: none;
+  }
+  
+  /* ===========================
+     🌟 Invalid Input
+     =========================== */
+  .invalid-input {
+    color: red;
+    margin-top: -20px;
+    display: block;
+    margin-left: 20px;
+  }
+  
+  /* ===========================
+     🌟 Mobile Responsiveness
+     =========================== */
+  @media (max-width: 1024px) {
+    .nav-ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-list ul li {
+      width: calc(50% - 20px);
+      margin: 10px;
+    }
+  
+    .search-product-box, .inputbox, .appbutton {
+      width: 90%;
+    }
+  
+    .footer {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav-ul {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .nav-ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .product-list ul li {
+      width: 100%;
+    }
+  
+    .footer {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-ul li {
+      display: block;
+      padding: 10px;
+    }
+  
+    .inputbox, .appbutton, .search-product-box {
+      width: 100%;
+    }
+  
+    .footer {
+      font-size: 12px;
+      padding: 10px;
+    }
+  }
+  
