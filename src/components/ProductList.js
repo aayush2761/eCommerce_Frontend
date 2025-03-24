@@ -8,7 +8,7 @@ const ProductList = () => {
     }, []);
 
     const getProducts = async () => {
-        let result = await fetch('https://ecommerce-backend-402f.onrender.com/products');
+        let result = await fetch('https://ecommerce-ayu1.onrender.comproducts');
             
         result = await result.json();
         setProducts(result);
@@ -19,7 +19,7 @@ const ProductList = () => {
 
 
    const deleteProduct=async(id)=>{
-     let result =await fetch(`https://ecommerce-backend-402f.onrender.com/product/${id}` ,{
+     let result =await fetch(`https://ecommerce-ayu1.onrender.comproduct/${id}` ,{
         method:"Delete",
         
      });
@@ -33,7 +33,7 @@ const ProductList = () => {
     console.warn(event.target.value)
     let key=event.target.value;
     if(key){
-        let result= await fetch(`https://ecommerce-backend-402f.onrender.com/search/${key}`);
+        let result= await fetch(`https://ecommerce-ayu1.onrender.comsearch/${key}`);
            
         
         result=await result.json();

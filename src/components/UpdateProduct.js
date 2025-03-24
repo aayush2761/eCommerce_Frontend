@@ -18,7 +18,7 @@ const UpdateProduct = () => {
     
     const getProductDetails= async()=>{
         try {
-            let result = await fetch(`https://ecommerce-backend-402f.onrender.com/product/${params.id}`,{
+            let result = await fetch(`https://ecommerce-ayu1.onrender.comproduct/${params.id}`,{
                 headers:{
                     authorization: `bearer ${JSON.parse(localStorage.getItem('token'))}`
                 }
@@ -35,7 +35,7 @@ const UpdateProduct = () => {
 
     const updateProduct = async () => {
         try {
-            let result = await fetch(`https://ecommerce-backend-402f.onrender.com/product/${params.id}`,{
+            let result = await fetch(`https://ecommerce-ayu1.onrender.comproduct/${params.id}`,{
                 method:"Put",
                 body: JSON.stringify({name,price,category,company}),
                 headers:{

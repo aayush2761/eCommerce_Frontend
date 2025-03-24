@@ -19,7 +19,7 @@ const SignUp =()=>{
     },[]);
     const collectData = async () => {
         console.warn(name, email, password);
-        let result = await fetch('https://ecommerce-backend-402f.onrender.com/register', {
+        let result = await fetch('https://ecommerce-ayu1.onrender.comregister', {
             method: 'post',
             body: JSON.stringify({ name, email, password }),
             headers: {

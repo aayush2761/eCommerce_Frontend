@@ -23,7 +23,7 @@ const AddProduct = () => {
             }
             const userId = JSON.parse(userData)._id;
             
-            let result = await fetch("https://ecommerce-backend-402f.onrender.com/add-product", {
+            let result = await fetch("https://ecommerce-ayu1.onrender.comadd-product", {
                 method: "post",
                 body: JSON.stringify({ name, price, category, company, userId }),
                 headers: {
